@@ -1,50 +1,22 @@
 
 # SDCND : Sensor Fusion and Tracking
 
-# MidTerm Project
-## Compute Lidar Point-Cloud from Range Image
-### Visualizing range image channels
-![Range Image](range_image_channels.png)
-
-### Visualizing point-cloud
-
-|             Front            |             Rear            |
-|:----------------------------:|:---------------------------:|
-| ![](Front.png "point-cloud") | ![](Rear.png "point-cloud") |
-
-## Birds-Eye View from Lidar PCL
-
-### Converting sensor coordinates to bev-map coordinates
-![](BEV-map.png)
-### intensity & height layer of bev-map
-|             Intensity Map              |            Height Map            |
-|:--------------------------------------:|:--------------------------------:|
-| ![](img_intensity.png "Intensity Map") | ![](height_map.png "Height Map") |
-
-## Model-based Object Detection in BEV Image
-![](labels-detected-objects-screenshot.png)
-
-## Performance Evaluation for Object Detection
-
-![](performance_metrics.png)
-![](precision-recall.png)
-
-# Writeup: Track 3D-Objects Over Time (Final Project)
+# Track 3D-Objects Over Time (Final Project)
 
 ## Step 1: Implementing an Extended Kalman Filter
 EKF has 3 main steps prediction, measurement and update.
 - First was adding the representation of the state of the system which consist of process model and velocity.
 - working on the prediction function the following matrices were needed (System matrix **F**, process noise covariance **Q**) both these matrices where implemented using the saved parameters in params.py.
 - for the update function measurment matrix (H), Gamma residual , covariance of the residual (S), kalman gain(K), state update and covariance update all were calculated to update the state x and covariance P.
-![](RSME-Step1.png)
-![](step1.png)
+![](final_proj_outputs/RSME-Step1.png)
+![](final_proj_outputs/step1.png)
 
 ## Step 2: Implementing the track management to initialize and delete tracks, set a track state and a track score.
 - initializing new track from inassigned measurements
 - Transform the unassigned measurement from sensor to vehicle coordinates
 - manage track score based on the threshold to keep or delete the track
 - handle updated track to change the state wether it's comfirmed or tentative using the confimed threshold
-![](step2.png)
+![](final_proj_outputs/step2.png)
 
 ## Step 3: Implementing a single nearest neighbor data association to associate measurements to tracks.
 - Data association for the track and measurement using Mahalanobid distance 

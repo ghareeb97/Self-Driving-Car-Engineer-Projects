@@ -3,27 +3,27 @@
 
 ## Compute Lidar Point-Cloud from Range Image
 ### Visualizing range image channels
-![Range Image](range_image_channels.png)
+![Range Image](img/output/range_image_channels.png)
 
 ### Visualizing point-cloud
 
 |             Front            |             Rear            |
 |:----------------------------:|:---------------------------:|
-| ![](Front.png "point-cloud") | ![](Rear.png "point-cloud") |
+| ![](img/output/Front.png "point-cloud") | ![](img/output/Rear.png "point-cloud") |
 
 ## Birds-Eye View from Lidar PCL
 
 ### Converting sensor coordinates to bev-map coordinates
-![](BEV-map.png)
+![Alt text](img/output/BEV-map.png)
 ### intensity & height layer of bev-map
 |             Intensity Map              |            Height Map            |
 |:--------------------------------------:|:--------------------------------:|
-| ![](img_intensity.png "Intensity Map") | ![](height_map.png "Height Map") |
+| ![](img/output/img_intensity.png "Intensity Map") | ![](img/output/height_map.png "Height Map") |
 
 ## Model-based Object Detection in BEV Image
-![](labels-detected-objects-screenshot.png)
+![](img/output/labels-detected-objects-screenshot.png)
 
 ## Performance Evaluation for Object Detection
 
-![](performance_metrics.png)
-![](precision-recall.png)
+![](img/output/performance_metrics.png)
+![](img/output/precision-recall.png)

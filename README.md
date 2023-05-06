@@ -28,7 +28,7 @@
 - Fuse camera and lidar detections and track objects over time with Extended Kalman Filter.
   
 <p align="center">
-  <img width="460" height="300" src="2-Sensor-Fusion-and-Tracking/img/img_title_1.jpeg">
+  <img width="460" height="300" src="2-Sensor-Fusion-and-Tracking/3D-Object-Detection-with-LiDAR-Data/img/img_title_1.jpeg">
 </p>
 
 **Localization:**
